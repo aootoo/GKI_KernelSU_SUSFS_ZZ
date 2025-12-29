@@ -945,7 +945,7 @@ jobs:
           name: ${{ inputs.kernelsu_variant }}_kernel-${{ env.CONFIG }}
           path: |
             *AnyKernel3.zip
-            *.img
+            *boot-gz.img
 
       - name: 上传编译资产 (仅 AK3)
         if: ${{ inputs.onlyAk3 }}
